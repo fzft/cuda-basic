@@ -5,4 +5,5 @@ project(cuda_basic CUDA CXX C)
 find_package(CUDAToolkit REQUIRED)
 
 add_subdirectory(reduce)
+add_subdirectory(sgemm)
 
