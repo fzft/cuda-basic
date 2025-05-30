@@ -9,7 +9,7 @@
 #include <memory>
 #include <chrono>
 
-__global__ void sum_rows_f322(const int *x, int *dst, const int ncols) {
+static __global__ void sum_rows_f322(const int *x, int *dst, const int ncols) {
     const int row = blockIdx.x;
     const int col = threadIdx.x;
 
